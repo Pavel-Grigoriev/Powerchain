@@ -1,0 +1,158 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: url(./images/blockchain-1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  color: #777;
+  height: 100%;
+  
+}
+
+.box{
+  padding:20px 40px;
+  color: #777;
+  border: 2px solid white;
+  border-radius: 24px;
+  text-align: center;
+  background: #111111;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box h2{
+  color: white;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.box input[type = "text"]:hover{
+  width: 90%;
+ border-color: gray;
+  
+}
+
+.box input[type = "text"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 10px;
+  width: 65%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 10px;
+  width: 30%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "submit"]:hover{
+  background: #525455;
+  border-color: #525455;
+ 
+}
+.box input[type = "button"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 10px;
+  width: 30%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "button"]:hover{
+  background: #525455;
+  border-color: #525455;
+ 
+}
+.box input[type = "number"]:hover{
+  background: #525455;
+  border-color: #525455;
+ 
+}
+.link{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: whitesmoke;
+}
+.user{
+  text-decoration: none;
+  font-size: 27px;
+  line-height: 20px;
+  color: whitesmoke;
+}
+.box a:hover
+{
+  color: #525455;
+  text-decoration-line: underline;
+}
+
+  
+@media (max-width: 400px) {
+  .box {width: 200px;
+    padding: 10px 40px;}
+   
+    .box h2{
+       font-size: 25px;
+    }
+}
+.box select{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 10px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  width:90%;
+}
+.box select:active{
+  
+  border-color: #525455;
+  color: #525455;
+}
+.box select:hover{
+  border-color: #525455;
+  color: #525455;
+}
+@media (min-width: 872px) {
+  .box input[name="home"]{
+    display: none;
+  }
+  
+}

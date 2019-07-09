@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./images/blockchain-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+}
+.fa{
+    margin: auto 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.content h1 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 3vw;
+}
+.content h2{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 2vw;
+}
+.content a{
+    margin: 20px auto;
+    padding: 10px 14px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size:2vw;
+    border: 2px solid black;
+    border-radius: 24px;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    background: #000;
+    height: 70px;
+    position: static;
+    z-index: 1;
+    
+}
+
+nav #brand {
+    float: left;
+    display: block;
+    margin-left: 50px;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+nav #brand a {
+    color: #fff;
+    transition: all 0.3s ease-out;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size:30px;
+}
+
+nav #menu {
+    float: right;
+    margin-right: 50px;
+}
+
+nav #menu li {
+    display: inline-block;
+    padding: 0px 10px;
+    cursor: pointer;
+    line-height: 70px;
+    position: relative;
+    transition: all 0.3s ease-out;
+    font-size:20px;
+}
+
+nav #menu li a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    border: 2px solid black;
+    padding: 10px 10px;
+    border-radius: 24px;
+}
+nav #menu li a:hover{
+   border-color: white;
+}
+#toggle {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle .span {
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease-out;
+    backface-visibility: hidden;
+    margin: 5px auto;
+}
+
+#toggle.on #one {
+    transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+    opacity: 0;
+}
+
+#toggle.on #three {
+    transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#resize {
+    z-index: 1;
+    top: 0px;
+    position: absolute;
+    background:black;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out;
+    display: table;
+    
+}
+#resize #menu {
+    height: 90px;
+    display: table-cell;
+    vertical-align: center;
+}
+
+#resize #menu li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 50px;
+    min-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+    margin-top:40px;
+}
+
+#resize #menu li a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid black;
+    padding: 10px 10px;
+    border-radius: 24px;
+}
+#resize #menu li a:hover{
+    border-color: white;
+}
+#resize.active {
+    visibility: visible;
+    opacity: 0.99;
+}
+
+
+@media(max-width: 872px) {
+    #toggle {
+          visibility: visible;
+          opacity: 1;
+          margin-top: 6px;
+    }
+    
+    nav #brand {
+          margin: auto;
+    }
+    i{
+        margin-left: 0px;
+    }
+    #menu a {
+          font-family: "Open Sans","sans-serif";
+          font-weight: 200;
+          font-size: 20px;
+    }
+    
+    nav #menu {
+          display: none;
+    }
+    .content h1{
+        font-size: 30px;
+        
+    }
+    .content h2{
+        font-size: 25px;
+        
+    }
+    .content{
+        margin: 40px 0 auto;
+        width:70%;
+        
+    }
+    .content h1{
+        font-size: 10vw;
+    }
+}
+
+@media(min-width: 872px) {
+    #resize {
+          visibility: hidden !important;
+    }
+    
+}

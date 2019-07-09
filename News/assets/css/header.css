@@ -1,0 +1,40 @@
+nav {
+    width: 100%;
+    background: #000;
+    height: 70px;
+    position: static;
+    z-index: 1;
+    
+  }
+  nav #brand {
+    display: block;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0);
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;
+    
+  }
+  nav #brand a:hover{
+    color:gray;
+}
+  nav #brand a {
+    color: #fff;
+    transition: all 0.3s ease-out;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size:30px;
+    text-decoration: none;
+  }
+  .fa{
+    margin: auto 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  .fa:hover{
+    color:gray;
+    border-color: gray;
+  }
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PowerChain | Wallet</title>
+  <link rel="shortcut icon" href="\Revolutional Design\link.png"/>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav>
+    <span id="brand">
+      <div class="icon">
+        <a href="/Revolutional%20Design/Homepage/std-mainpage/index.html"><i class="fa fa-link"></i></a><a
+          href="/Revolutional%20Design/Homepage/std-mainpage/index.html">Home</a>
+      </div>
+
+    </span>
+  </nav>
+  <form class="box" action="/Revolutional%20Design/Homepage/std-mainpage/index.html" method="post">
+    <h1>Student`s Wallet</h1>
+    <h2 id="Balance">Balance: </h2>
+
+
+
+    <select id="sel">
+      <option value="" selected disabled>Donate to... Username - Address</option>
+    </select>
+    <input type="number" step="1" id="pwr" placeholder="PWR tokens" min=0 style="border:0;background: none;display: block;margin: 20px auto;text-align: center;border: 2px solid white;padding: 14px 10px;width: 65%;outline: none;color: white;border-radius: 24px;transition: 0.25s;">
+    <input type="button" name="Send" value="Send" onclick="SendTokens();">
+    <input type="submit" name="home" id="home" value="Home">
+
+  </form>
+
+
+</body>
+
+<script src="/Revolutional%20Design/web3connect.js"></script>
+<script src="./wallet.js"></script>
+<script>
+CheckCookie();</script>
+</html>

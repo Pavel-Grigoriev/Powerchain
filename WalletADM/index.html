@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PowerChain | Wallet</title>
+  <link rel="shortcut icon" href="\Revolutional Design\link.png"/>
+  <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body>
+  <a href="\Revolutional Design\Homepage\adm-mainpage\index.html">HOMEPAGE</a>
+  <div class="info" id="info">
+
+  </div>
+  <div class="content" id="content">
+    <div id="teachers">
+
+    </div>
+    <div id="students">
+
+    </div>
+  </div>
+  <div class="refill" id="refill">
+    <br /><input type="button" onclick="RefillTokens();" value="Refill PWR tokens" /><br />
+    <br /><input type="button" onclick="RefillEther();" value="Refill Ether" /><br />
+    <br /><a href="https://faucet.metamask.io/">Refill Your Ether</a><br />
+  </div>
+  <div class="add">
+    <br /><input type="text" id="a1" placeholder="address" /><input type="text" id="u1" placeholder="username" /><input
+      placeholder="password" id="p1" type="text" />
+    <br /><input type="button" onclick="addT();" value="Add Teacher" /><br />
+    <br /><input type="text" id="a2" placeholder="address" /><input type="text" id="u2" placeholder="username" /><input
+      placeholder="password" id="p2" type="text" />
+    <br /><input type="button" onclick="addS();" value="Add Student" /><br />
+    <br /><input type="text" id="a3" placeholder="address" />
+    <br /><input type="button" onclick="Del();" value="Delete User" /><br />
+  </div>
+</br></br>
+News manager
+<input type="button" id="displayer" value="Display All News"  onclick="ShowNews();"><input type="button"  value="Display Latest 3"  onclick="FillNews();"><input type="button" value="Hide News"  onclick="HideNews();">
+  <br>Current news:<br>
+<div id="newscontent">
+  
+
+</div>
+</br>
+<div id="postnews">
+</br>Add News</br>
+<input type="text" id="news" placeholder="Write news">
+<input type="button" id="poster" value="Post News"  onclick="AddNews();">
+
+</div>
+</br>
+<div id="deletenews">
+  </br>Delete News</br>
+  <input type="number" min="1" id="did" placeholder="paste id">
+  <input type="button" id="deleter" value="Delete News" onclick="DeleteNews();">
+  
+</div>
+</br></br>
+  Items in the online store:
+  <div class="items"id="items">
+    
+    </div>
+  <form action="\Revolutional Design\TestShop\edit.php" class="shop" method="POST" enctype="multipart/form-data">
+  </br>
+      Add new item in the online store
+    </br>
+    <input type="text" id="title" placeholder="title" name="title">
+    <input type="text" id="description" placeholder="description" name="description">
+    <input type="number" id="price" placeholder="price" min=1 max=10000 name="price">
+  </br>
+    Choose item photo
+    </br><input type="file" name='file' id="file">
+    </br><input type="submit" value="Upload" name='submit' onclick="AddItem();">
+  </form>
+  <form action="\Revolutional Design\TestShop\assets\css\images\delete.php" class="shop" enctype="multipart/form-data"  method="POST">
+    </br>
+    Delete item in the online store
+    </br>
+    <input type="number" id="id" placeholder="id" min=0 name="id"><input type="text" name="path" placeholder="paste link if needed">
+    </br>
+    <input type="submit" value="Delete" name='delete' id="id">
+  </form>
+</br>
+<form class="shop">
+    </br>
+    Change item in the online store
+    </br>
+    <input type="number" id="cid" placeholder="id" min=0 name="id">
+    <input type="number" id="cprice" placeholder="price" min=1 max=10000 name="price">
+    <input type="text" id="ctitle" placeholder="title" name="title">
+    <input type="text" id="cdescription" placeholder="description" name="description">
+    <input type="text"id="cpath" placeholder="paste link if neededd">
+    </br>
+    <input type="button" value="Change" onclick="ChangeItem();">
+  </form>
+</br>
+  <a href="\Revolutional Design\TestShop\index.html">Check Shop State</a>
+  <div id="logs">
+    </br>
+    Manipulate the portfolio
+    </br>
+    <input type="text" id="address" placeholder="paste address to see the logs" onchange="Logs();">
+    <div id="display">
+    </br>
+   
+    </div>
+    <div id="change">
+        Deleting logs
+    </br>
+        <input type="number" id="newid" placeholder="paste the log`s id">
+        <input type="button" value="Delete Log" onclick="DeleteLog();">
+    </div>
+    
+  </br>
+  </div>
+  
+</body>
+<script src="\Revolutional Design\node_modules\js-sha256\build\sha256.min.js"></script>
+<script src="/Revolutional%20Design/web3connect.js"></script>
+<script src="./wallet.js"></script>
+<script>
+  CheckCookie();</script>
+
+</html>
