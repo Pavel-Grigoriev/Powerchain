@@ -1,5 +1,5 @@
 # Powerchain created by Pavel Grigoriev 2018/2019
-The main goal oh the project is to help pupils aqquire motivation and skills while stydying and to make the teachers' work way easier(especially in the first 5 grades where teachers are tend to spend a lot of time and energy making kids listen to them and creating extra motivation programms for childern).
+The main goal of the project is to help pupils aqquire motivation and skills while stydying and to make the teachers' work way easier(especially in the first 5 grades where teachers are tend to spend a lot of time and energy making kids listen to them and creating extra motivation programms for childern).
 New project is a website that uses blockchain technology.
 We use Ethereum blockchain paltform, our smart-contracts a deployed into the Ropsten test network.
 For the working issues we have deployed our own ERC20 token(cryptocurrency).
